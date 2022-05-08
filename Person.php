@@ -43,7 +43,7 @@ class Person {
     }
     function getInfo(){
         return "
-        <h3>A few words about myself:</h3><br>"."My name is: ".$this->getName()."<br> my lastname is: ".$this->getLastname()."<br> my father is: ".$this->getFather()->getName()."<br> my Grandfather is: ".$this->getGrandFather()->getName()."<br> my GrandMother is: ".$this->getGrandMother()->getName();
+        <h3>A few words about myself:</h3><br>"."My name is: ".$this->getName()."<br> my lastname is: ".$this->getLastname()."<br> my father is: ".$this->getFather()->getName()."<br>;
 
     }
 }
