@@ -41,9 +41,17 @@ class Person {
     {
         return $this->father;
     }
+   	function getGrandMother()
+    {
+        return $this->grandMother;
+    }
+    function getGrandFather()
+    {
+        return $this->grandFather;
+    }
     function getInfo(){
         return "
-        <h3>A few words about myself:</h3><br>"."My name is: ".$this->getName()."<br> my lastname is: ".$this->getLastname()."<br> my father is: ".$this->getFather()->getName()."<br>;
+        <h3>A few words about myself:</h3><br>"."My name is: ".$this->getName()."<br> my lastname is: ".$this->getLastname()."<br> my father is: ".$this->getFather()->getName();
 
     }
 }
@@ -61,5 +69,5 @@ $ivan = new Person("Ivan", "Ivanov", 65);
 
 echo $valera->getName() . "<br>";
 echo $valera->getMother()->getName() . "<br>";
-echo $valera->getFather()->getName() . "<br>";
+echo $valera->getGrandMother()->getName() . "<br>";
 echo $valera->getFather()->getMother()->getName();
