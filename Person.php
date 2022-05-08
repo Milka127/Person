@@ -65,7 +65,7 @@ $igor = new Person("Igor", "Petrov", 68);
 $elena = new Person("Elena", "Ivanova", 68);
 $ivan = new Person("Ivan", "Ivanov", 65);
 
-$alex = new Person("Alex", "Ivanov", 42, $elena, $ivan, $elena, $igor);
+$alex = new Person("Alex", "Ivanov", 42, $elena, $ivan);
 $olga = new Person("Olga", "Ivanov", 35, $irina, $igor);
 $valera = new Person("Valera", "Ivanov", 15, $olga, $alex);
 
@@ -74,3 +74,5 @@ echo $valera->getName() . "<br>";
 echo $valera->getMother()->getName() . "<br>";
 echo $valera->getGrandMother()->getName() . "<br>";
 echo $valera->getFather()->getMother()->getName();
+
+echo $valera->getInfo() . "<br>";
